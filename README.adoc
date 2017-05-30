@@ -22,9 +22,46 @@
 This project was designed to augment Red Hat (R) https://www.redhat.com/en/technologies/cloud-computing/cloudforms[CloudForms]
 installations.
 
-== Select the correct CloudForms version: 
+CloudForms version: link:https://github.com/ramrexx/CloudForms_Essentials/tree/cf4.5[CloudForms 4.5]
 
-* link:https://github.com/ramrexx/CloudForms_Essentials/tree/cf4.0[CloudForms 4.0]
-* link:https://github.com/ramrexx/CloudForms_Essentials/tree/cf4.1[CloudForms 4.1]
-* link:https://github.com/ramrexx/CloudForms_Essentials/tree/cf4.2[CloudForms 4.2]
-* [CloudForms 4.5 coming soon!]
+== Installation Instructions
+
+
+=== Clone this repository
+
+This repo is required in order to import some of the items referenced on this page.
+
+.  While in `root's` home directory, clone the cfme-rhconsulting-scripts repo:
+
+ git clone -b cf4.5 https://github.com/ramrexx/CloudForms_Essentials
+
+.  Change directory to `/root/CloudForms_Essentials` directory:
+
+ cd /root/CloudForms_Essentials
+
+
+
+
+<<top>>
+
+=== Clone cfme-rhconsulting-scripts repository
+
+This repo is required in order to import some of the items referenced on this page.
+
+.  While in `root's` home directory, clone the cfme-rhconsulting-scripts repo:
+
+ git clone https://github.com/rhtconsulting/cfme-rhconsulting-scripts
+
+.  Change directory to `/root/rhtconsulting-cfme-rhconsulting-scripts` directory:
+
+ cd /root/rhtconsulting-cfme-rhconsulting-scripts
+
+.  Install import/export utilities
+
+ make clean install
+
+You can ignore the "/bin/sh: rpmbuild: command not found" warning message
+
+The `/usr/bin/miqimport` and `/usr/bin/miqexport` utilities are now installed
+
+<<top>>
